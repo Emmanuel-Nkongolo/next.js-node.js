@@ -39,6 +39,7 @@ Backend Setup:
 Install Tesseract OCR first:
 # For Ubuntu/Debian
 sudo apt update
+
 sudo apt install tesseract-ocr
 
 # For macOS
@@ -46,19 +47,24 @@ brew install tesseract
 
 # Install backend dependencies:
 cd backend
+
 npm install
 
 Start the server:
+
 npm start
 
 
 # Frontend Setup:
 
 Install frontend dependencies:
+
 cd frontend
+
 npm install
 
 Start the website:
+
 npm run dev
 
 
@@ -68,16 +74,20 @@ The app is containerized using Docker, making it easy to run everywhere!
 # Prerequisites:
 
 Install Docker
+
 Install Docker Compose
 
-Running with Docker:
+# Running with Docker:
 
 Clone the repository:
+
 git clone <repository-url>
+
 cd <project-directory>
 
 # Start the application using Docker Compose:
 docker-compose up
+
 This will:
 
 Build both frontend and backend containers
@@ -96,12 +106,15 @@ docker-compose down
 # Docker Commands Cheatsheet:
 
 Build and start containers:
+
 docker-compose up --build
 
 Start containers in background:
+
 docker-compose up -d
 
 Stop containers:
+
 docker-compose down
 
 View container logs:
@@ -110,15 +123,18 @@ docker-compose logs
 
 # Specific service
 docker-compose logs client
+
 docker-compose logs server
 
 # Rebuild a specific service:
 docker-compose build client
+
 docker-compose build server
 
 # How It Works 🔄
 
 Users go to the website and see a form
+
 They fill in their:
 
 First Name
