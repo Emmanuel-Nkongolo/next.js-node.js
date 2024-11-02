@@ -130,9 +130,9 @@ View container logs:
 docker-compose logs
 
 # Specific service
-docker-compose logs client
+docker-compose logs frontend
 
-docker-compose logs server
+docker-compose logs backend
 
 # Rebuild a specific service:
 docker-compose build frontend
