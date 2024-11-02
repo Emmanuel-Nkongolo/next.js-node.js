@@ -52,6 +52,14 @@ npm install
 
 Start the server:
 
+Note: Please download nodemon first by using this command 
+
+npm install --save-dev nodemon
+
+or globally: 
+
+npm install -g nodemon
+
 npm start
 
 
