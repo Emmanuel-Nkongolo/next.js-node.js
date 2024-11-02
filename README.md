@@ -89,9 +89,9 @@ Install Docker Compose
 
 Clone the repository:
 
-git clone <repository-url>
+git clone repository-url
 
-cd <project-directory>
+cd project-directory
 
 # Start the application using Docker Compose:
 docker-compose up
