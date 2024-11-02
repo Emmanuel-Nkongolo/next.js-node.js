@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  frontend:
+    container_name: client
+    image: client
+    build:
+      context: ./client
+      dockerfile: client.dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:4001
+    restart: always
+    depends_on:
+      - backend
+
+  backend:
+    container_name: server
+    image: server
+    build:
+      context: ./server
+      dockerfile: server.dockerfile
+    ports:
+      - 4001:4001
+    restart: always
