@@ -135,9 +135,9 @@ docker-compose logs client
 docker-compose logs server
 
 # Rebuild a specific service:
-docker-compose build client
+docker-compose build frontend
 
-docker-compose build server
+docker-compose build backend
 
 # How It Works 🔄
 
